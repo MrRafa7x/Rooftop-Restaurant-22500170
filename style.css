@@ -1,5 +1,6 @@
 *{margin: 0;
-box-sizing: border-box;}
+box-sizing: border-box;
+transition: 0.5s;}
 
 .btn-header{ display:inline-block;
 width: 4.5%;
@@ -7,7 +8,13 @@ height: 30px;
 position: relative;
 }
 
-header>ul{ padding: 0;
+header{
+    text-align: center;
+    padding: 10px 0;
+}
+
+header>ul{ 
+padding: 0;
 list-style: none;
 text-align: center;
 font-size: 13px;
@@ -16,7 +23,6 @@ font-weight: 500;}
 
 .menu-header {color:black;
 text-decoration: none;
-
 }
 
 .logo{  width: 20%;}
@@ -85,3 +91,218 @@ margin-bottom: 10px;}
 
 .dropdown:hover #drop{ opacity: 1;
 z-index: 99;}
+
+/* MENU */
+.menu-area {
+    width: 1140px;
+    height: 1175.5px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/* MENU ESQUERDO */
+.drink{
+    display: inline-block;
+    width: 490px;
+    height: 516px;
+    margin-top: 350px;
+    position: relative;
+
+}
+
+#drink-title{
+    font-family: "Playfair Display", serif;
+    letter-spacing: 7.2px;
+    font-weight: normal;
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 72px;
+}
+
+#drink-text{
+    font-family: "roboto", sans-serif;
+    height: 150px;
+    width: 390px;
+    font-size: 15px;
+    color:#777777;
+    line-height: 1.7;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.BtnMenu{
+   background-color: #ad9966;
+   border: 1px solid #ad9966;
+   display: inline-block;
+   position: relative;
+   line-height: 48px;
+   padding: 0 30px;
+   color: #fff;
+   letter-spacing: 2px;
+   cursor: pointer;
+   text-decoration: none;
+   outline: 0;
+   box-sizing: border-box;
+   height: 50px;
+   font-family: "Roboto", sans-serif;
+   font-size: 15px;
+}
+
+.BtnMenu:hover{
+    background-color: white;
+    color: #ad9966;
+}
+
+/* MENU DIREITA, APPETIZER */
+
+.menu h1{
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-size: 21px;
+    padding-bottom: 20px;
+    position: relative;
+    margin-bottom: 50px;
+    line-height: 1.5em;
+    margin-top: 120px;
+    text-align: center;
+}
+
+.menu h2{
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-size: 21px;
+    padding-bottom: 20px;
+    position: relative;
+    margin-bottom: 50px;
+    line-height: 1.5em;
+    margin-top: 80px;
+    text-align: center;
+}
+.barrinha{
+    width: 20%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    color: rgba(0, 0, 0, 0.2);
+    opacity: 30%;
+}
+
+.menu{
+    background-color: #faf5f0;
+    position: absolute;
+    display: inline-block;
+    width: 665px;
+    height: 1175.5px;
+    padding-bottom: 120px;
+    
+}
+.menu ul{
+    list-style: none;
+    padding: 0;
+}
+.menu-list{
+    padding-bottom: 35px;
+}
+.menu-item{
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #010000;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.7;
+}
+.menu-desc{
+    text-align: center;
+    color: #777777;
+    font-size: 15px;
+}
+
+/* Galeria */
+
+.gallery-area{
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 240px 0 90px;
+}
+
+.container-galeria{
+
+    position: relative;
+    max-width: 1140px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container-galeria img {
+    margin: 10px;
+    height: auto; /* Mantém a proporção */
+    display: inline-block;
+}
+
+#IMG1{
+    width: 540px;  
+    height: 778.38px;
+    margin-top: -480px;
+    position: relative;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    display: block;
+    left: 8%;
+}
+
+#IMG2{
+    width: 445px;  
+    height: 545.29px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#IMG3{
+    width: 445px;  
+    height: 545.29px;
+}
+
+#IMG4{
+    width: 540px;  
+    height: 583.79px;
+}
+/* os baguio fixado */
+#view-menu{
+    position: fixed;
+    top: 45%;
+    height: 180px;
+    width: 92px;
+    left: 0;
+    font-size: 13px;
+    line-height: 180px;
+    background-image: url(IMG/view-menu-bg.png);
+    a{ text-decoration: none;
+    color: black;
+    transform: rotate(90deg);
+    display: inline-block;}
+    z-index: 5000;
+}
+
+#book-a-table{
+    position: fixed;
+    top: 45%;
+    height: 180px;
+    width: 92px;
+    right: 0;
+    font-size: 13px;
+    line-height: 180px;
+    background-image: url(IMG/book-table-bg.png);
+    a{ text-decoration: none;
+    color: white;
+    transform: rotate(-90deg);
+    display: inline-block;}
+    z-index: 5000;
+}
+
+#view-menu:hover a, #book-a-table:hover a { transform: rotate(0);}
+
+

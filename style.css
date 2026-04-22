@@ -37,7 +37,7 @@ body {font-family: "Roboto", sans-serif;}
 .ativo{ color:#AD9966;}
     
 #sec01 { height: 78vh;
-background-image: url(IMG/header-bg.png);
+background-image: url(header-bg.png);
 background-repeat: no-repeat;
 background-size: contain;
 background-position: center;
@@ -279,7 +279,7 @@ z-index: 99;}
     left: 0;
     font-size: 13px;
     line-height: 180px;
-    background-image: url(IMG/view-menu-bg.png);
+    background-image: url(view-menu-bg.png);
     a{ text-decoration: none;
     color: black;
     transform: rotate(90deg);
@@ -295,7 +295,7 @@ z-index: 99;}
     right: 0;
     font-size: 13px;
     line-height: 180px;
-    background-image: url(IMG/book-table-bg.png);
+    background-image: url(book-table-bg.png);
     a{ text-decoration: none;
     color: white;
     transform: rotate(-90deg);
